@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>About Us | SVJ Interior Works</title>
+  <meta name="description" content="About SVJ Interior Works – 20+ years of excellence in premium interior design and execution across India and international markets." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Motion One Animations -->
+  <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+</head>
+<body class="bg-neutral-950 text-white scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-semibold tracking-wide">SVJ Interior Works</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-neutral-300">Home</a>
+        <a href="#" class="text-white font-medium">About Us</a>
+        <a href="index.html#contact" class="hover:text-neutral-300">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image:url('https://images.unsplash.com/photo-1615874959474-d609969a20ed')">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <div id="hero" class="relative text-center px-6">
+      <h2 class="text-5xl font-bold mb-6">20+ Years of Interior Excellence</h2>
+      <p class="max-w-3xl mx-auto text-lg text-neutral-200">Crafting timeless residential and commercial interiors with international standards.</p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="py-24 max-w-6xl mx-auto px-6">
+    <div class="fade-section">
+      <h3 class="text-3xl font-semibold mb-6">Our Story</h3>
+      <p class="text-neutral-300 leading-relaxed">
+        Founded by <strong>Sanyasi Rao Madhupada</strong>, SVJ Interior Works has been delivering premium interior solutions for over two decades. From residential spaces to large-scale commercial projects, our work reflects precision, durability, and refined aesthetics trusted across multiple states in India.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="py-24 bg-neutral-900">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+      <div class="fade-left">
+        <h3 class="text-3xl font-semibold mb-6">Our Vision</h3>
+        <p class="text-neutral-300">To become a globally recognized interior execution brand delivering world-class quality, innovation, and reliability.</p>
+      </div>
+      <div class="fade-right">
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87" class="rounded-2xl shadow-lg" alt="Interior Vision" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="py-24 max-w-6xl mx-auto px-6 text-center">
+    <div class="fade-section">
+      <h3 class="text-4xl font-bold mb-4">20+ Years</h3>
+      <p class="text-neutral-300">of trusted interior execution across India, now expanding internationally.</p>
+    </div>
+  </section>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/919247834336" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg">Chat on WhatsApp</a>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-neutral-500 border-t border-neutral-800">© <span id="year"></span> SVJ Interior Works</footer>
+
+  <!-- Animations -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    motion.animate('#hero', { opacity: [0,1], y: [40,0] }, { duration: 1.2 });
+
+    document.querySelectorAll('.fade-section').forEach(el => {
+      motion.animate(el, { opacity: [0,1], y: [30,0] }, { duration: 0.9 });
+    });
+
+    motion.animate('.fade-left', { opacity: [0,1], x: [-40,0] }, { duration: 1 });
+    motion.animate('.fade-right', { opacity: [0,1], x: [40,0] }, { duration: 1 });
+  </script>
+
+</body>
+</html>
