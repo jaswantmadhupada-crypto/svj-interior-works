@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>SVJ Interior Works | International Interior Design & Execution</title>
+  <meta name="description" content="SVJ Interior Works – 20+ years of premium residential and commercial interior design and execution across India, now serving international clients." />
+  <meta name="keywords" content="Interior Works, Interior Design India, Commercial Interiors, Residential Interiors, SVJ Interior Works" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Motion One Animations -->
+  <script src="https://unpkg.com/@motionone/dom/dist/motion.min.js"></script>
+</head>
+<body class="bg-neutral-950 text-white scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 class="text-xl font-semibold tracking-wide">SVJ Interior Works</h1>
+      <nav class="space-x-6">
+        <a href="about.html" class="hover:text-neutral-300">About Us</a>
+        <a href="#works" class="hover:text-neutral-300">Our Works</a>
+        <a href="#contact" class="hover:text-neutral-300">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div id="heroText" class="relative text-center px-6">
+      <h2 class="text-5xl font-bold mb-6">Designing Global-Class Interiors</h2>
+      <p class="max-w-2xl mx-auto text-lg text-neutral-200">Premium residential and commercial interior solutions crafted with international standards.</p>
+    </div>
+  </section>
+
+  <!-- States Served -->
+  <section class="py-24 max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold mb-6">States Served / Global Reach</h3>
+    <p class="text-neutral-300 max-w-3xl mb-8">With 20+ years of experience, SVJ Interior Works has successfully delivered premium projects across major Indian states and is expanding internationally.</p>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-neutral-200">
+      <div>Andhra Pradesh</div>
+      <div>Tamil Nadu</div>
+      <div>Odisha</div>
+      <div>Delhi</div>
+      <div>Punjab</div>
+    </div>
+  </section>
+
+  <!-- Our Works (Premium Samples – Replace Later) -->
+  <section id="works" class="py-24 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-semibold mb-12">Our Works</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed" alt="Luxury Interior" class="w-full h-72 object-cover rounded-2xl" />
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87" alt="Modern Interior" class="w-full h-72 object-cover rounded-2xl" />
+        <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" alt="Premium Interior" class="w-full h-72 object-cover rounded-2xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold mb-6">Contact Us</h3>
+    <p class="text-neutral-300 mb-6">For international enquiries and partnerships:</p>
+    <p><strong>Sanyasi Rao Madhupada</strong></p>
+    <p>Phone: +91 92478 34336</p>
+    <p>Experience: 20+ Years</p>
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919247834336" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg">WhatsApp</a>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-neutral-500 border-t border-neutral-800">© <span id="year"></span> SVJ Interior Works</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    motion.animate('#heroText', { opacity: [0,1], y: [40,0] }, { duration: 1 });
+  </script>
+
+</body>
+</html>
